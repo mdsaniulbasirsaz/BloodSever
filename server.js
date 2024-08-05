@@ -10,8 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //Connect to MongoDB
 mongoose.connect('mongodb+srv://saniulsaz:12345@roktodin.abnxvco.mongodb.net/BloodSever', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
 })
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Failed to connect to MongoDB', err));
